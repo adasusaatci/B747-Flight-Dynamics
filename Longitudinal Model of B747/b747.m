@@ -4,7 +4,7 @@ clc;
 close all
 %% Weight and Inertia 
 p.g   = 9.80665;         % m/s^2
-p.m   = 288756.902742;   % kg
+p.m   = 255826;   % kg
 p.S    = 510.96672;   % m^2
 p.b    = 59.643264;   % m
 p.cbar = 8.324088;    % m
@@ -37,8 +37,8 @@ p.Cmalphadot = -3.3;
 %% Initial Conditions 
 % p.Thrust = 10000; %N
 q_init = 0;
-theta_init = 0; %rad
-alpha_init = p.alpharef; %rad
+theta_init = p.alpharef; %deg
+alpha_init = p.alpharef; %deg
 V_init = 67.394444; %m/s
 
 %% Plot
